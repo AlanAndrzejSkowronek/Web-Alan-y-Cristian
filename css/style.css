@@ -1,0 +1,26 @@
+/* GRID */
+
+body {
+    display: grid;
+    grid-template-areas:
+    "head head head head head"
+    "main main main main aside"
+    "foot foot foot foot foot"
+    ;
+}
+
+header {
+    grid-area: head;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: foot;
+}
