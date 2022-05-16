@@ -1,6 +1,24 @@
+/* CAMBIOS GENERALES */
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* CAMBIOS ESPECÍFICOS */
+
+.logo {
+    height: 75px;
+    width: 75px;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
 /* GRID */
 
 body {
+    margin: 0;
     display: grid;
     grid-template-areas:
     "head head head head head"
@@ -14,13 +32,67 @@ header {
 }
 
 main {
+    margin-top: 110px;
+    padding: 30px;
     grid-area: main;
 }
 
 aside {
+    margin-top: 110px;
+    padding: 30px;
     grid-area: aside;
 }
 
 footer {
+    padding: 35px;
     grid-area: foot;
 }
+
+/* FLEXBOX Y ESTILOS */
+
+header {
+    position: fixed;
+    background-color:cadetblue;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px;
+}
+
+ul a {
+    text-decoration: none;
+    color: black;
+    font-size: xx-large;
+    font-weight: 500;
+    border-left: 2px solid rgb(78, 0, 0);
+    padding-left: 8px;
+}
+
+main {
+    background-color: aliceblue;
+}
+
+aside {
+    background-color: slategrey;
+}
+
+footer {
+    background-color: rgb(43, 43, 43);
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* MEDIA QUERIES */
