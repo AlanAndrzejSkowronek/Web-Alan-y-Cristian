@@ -98,7 +98,12 @@ ul a {
 }
 
 main {
-    background-color: aliceblue;
+    background-color: rgb(205, 223, 223);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 
 aside {
@@ -197,4 +202,30 @@ section h1{
  .cuerpoCarta a:hover{
      background-color: rgb(138, 189, 189);
  }
+.contNoticias{
+    display: flex;
+    width: 53em;
+    background-color: rgb(155, 198, 198);
+    box-shadow: -10px 10px 10px 10px  rgba(0, 0, 0, 0.436);
+    border-radius: 3em;
+    padding: 20px;
+}
+.contNoticias article{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    background-color: rgb(209, 237, 237);
+    border-radius: 2em;
+    padding: 20px;
+
+}
+.contNoticias article img{
+  width: 50em;
+
+}
+.contNoticias article h2{
+    align-self: center;
+    color: rgb(28, 101, 101);
+  
+  }
 /* MEDIA QUERIES */
