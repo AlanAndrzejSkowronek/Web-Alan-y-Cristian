@@ -3,6 +3,9 @@
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+a{
+  text-decoration: none;  
+}
 
 /* CAMBIOS ESPECÍFICOS */
 
@@ -94,5 +97,89 @@ footer {
     align-items: center;
     justify-content: space-around;
 }
+.contCarta{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section h1{
+    color: #052742;
+    align-self: center;
+    margin-bottom: 5%;
+    background-color: rgb(184, 233, 234);
+    border-radius: 0.5em;
+    padding:20px;
+    box-shadow: -10px 10px 10px 0 rgba(0, 0, 0, 0.447);
+}
+.carta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(183, 211, 211);
+    border: 2px solid #032e51;
+    width: 300px;
+    min-height: 400px;
+    border-radius:1em ;
+    box-shadow: -10px 10px 10px 0 rgba(0, 0, 0, 0.447);
+}
 
+
+.carta h2{
+    align-self: center;
+    color: #052742;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+.carta h3{
+    color: #3e698d;
+    margin: 5%;
+}
+.cabezeraCarta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cabezeraCarta a {
+    display: flex;
+    justify-content: center;
+}
+.cabezeraCarta h2:hover{
+   color: #0f8789;
+}
+
+.cuerpoCarta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cuerpoCarta img {
+   width: 100%;
+   
+}
+.cuerpoCarta p {
+    margin: 5%;
+    
+ }
+.cuerpoCarta a {
+    padding: 5px;
+    margin-bottom: 5%;
+    text-decoration: none;
+    color: #031f36;
+    background-color: rgb(222, 244, 244);
+    border: 1px solid #052742;
+    border-radius: 2em;
+    
+ }
+ .cuerpoCarta a:hover{
+     background-color: rgb(138, 189, 189);
+ }
 /* MEDIA QUERIES */
