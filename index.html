@@ -7,95 +7,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="./css/style.css">
-   
+
 </head>
 
-<body>
+<body onresize="desactivarSubMenu() , logoMenuMobilVisible()">
+    <div id="contMenuMobilcss"></div>
     <header>
         <img class="logo" src="imagenes/21601.png" alt="logo mundial con la palabra news.">
         <nav>
             <ul>
                 <li> <a href="index.html">INICIO</a> </li>
-                <li> <a href="#"onclick="alternarMenuNoticia()">NOTICIAS</a> 
+                <li><a href="formulario.html">NEWSLETTER</a></li>
+                <li> <a href="#" onclick="alternarSubMenuNoticia()">NOTICIAS</a>
                     <div class="contSubM">
-                    <ul class="subMNoticias">
-                        <li><a href="deportes.html">DEPORTES</a></li>
-                        <li><a href="videjuegos.html">VIDEOJUEGOS</a></li>
-                        <li><a href="politica.html">POLÍTICA</a></li>
-                        <li><a href="sucesos.html">SUCESOS</a></li>
-                    </ul></div>
+                        <ul class="subMNoticias">
+                            <li><a href="deportes.html">DEPORTES</a></li>
+                            <li><a href="videjuegos.html">VIDEOJUEGOS</a></li>
+                            <li><a href="politica.html">POLÍTICA</a></li>
+                            <li><a href="sucesos.html">SUCESOS</a></li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
         </nav>
+        <img onclick="alternarMenu()" id="menuMobil" src="imagenes/menuMovil.svg" alt="menuMobil">
     </header>
     <main>
         <section>
             <h1>NOTICIAS RECIENTES</h1>
             <div class="contCarta">
-            
-            <article class="carta">
-                <div class="cabezeraCarta">
-                   <a href="deportes.html"><h2>DEPORTES</h2></a> 
-                    
-                </div>
-                <div class="cuerpoCarta">
-                    <h3>futbol¿Oportunidad para Reina?</h3>
-                    <img src="https://uh.gsstatic.es/sfAttachPlugin/813041.jpg"
-                        alt=" Manolo Reina">
-                    <p>La llegada de un nuevo entrenador significa que muchos futbolistas pongan de nuevo el contador a
-                        cero. Se abre para ellos un nuevo horizonte y la opción de tener los minutos que con el anterior
-                        técnico no tenían. Manolo Reina es uno de...</p>
-                        <a href="./deportes.html#Manolo">ver mas</a>
-                </div>
-            </article>
-            <article class="carta">
-                <div class="cabezeraCarta">
-                    <a href="videjuegos.html"><h2>VIDEOJUEGOS</h2></a>
-                    
-                </div>
-                <div class="cuerpoCarta">
-                    <h3>Star Wars: retrasan estreno de Obi-Wan Kenobi, pero hay una buena noticia</h3>
-                    <img src="https://www.vibetv.mx/wp-content/uploads/2021/02/obi-wan-kenobi-serie-vibetv.jpg"
-                        alt="Obi-Wan Kenobi">
-                    <p>la acción de Obi-Wan Kenobi iba a llegar a Disney+ el próximo 25 de mayo. Desafortunadamente esto
-                        no será posible y la serie tardará un poco más en llegar. Los fans solo tendrán que esperar...
-                    </p><a href="./videjuegos.html#obiWan">ver mas</a>
-                </div>
-            </article>
 
-            <article class="carta">
-                <div class="cabezeraCarta">
-                    <a href="politica.html"><h2>POLÍTICA</h2></a>
-                    
-                </div>
-                <div class="cuerpoCarta">
-                    <h3>La nueva ejecutiva del PP reflejará el poder sin fisuras de Moreno en Andalucía</h3>
-                    <img src="https://phantom-elmundo.unidadeditorial.es/4d3fcf3c5d0b6dce3a350bed1ac2d5a9/resize/473/f/webp/assets/multimedia/imagenes/2022/03/25/16482103398629.jpg"
-                        alt="Moreno">
-                    <p>Colocará a personas de su máxima confianza en la dirección del partido tras desprenderse de las tutelas de la era Casado...
-                    </p><a href="./politica.html#Moreno">ver mas</a>
-                </div>
-            </article>
-            <article class="carta">
-                <div class="cabezeraCarta">
-                    <a href="sucesos.html"><h2>SUCESOS</h2></a>
-                </div>
-                <div class="cuerpoCarta">
-                    <h3>Un estudiante mata a su profesor con un machete en un colegio en Chequia</h3>
-                    <img src="https://phantom-elmundo.unidadeditorial.es/23d39b3d727707d94a21dbd00d786ec9/crop/169x267/2625x1904/resize/473/f/webp/assets/multimedia/imagenes/2022/04/01/16487922167201.jpg"
-                        alt="colegio">
-                    <p>Un centenar de agentes y un helicóptero participó en la búsqueda del joven, descontento por su "fracaso escolar"...
-                    </p><a href="./sucesos.html#asesinato">ver mas</a>
-                </div>
-            </article>
-            
-                </div>
+                <article class="carta">
+                    <div class="cabezeraCarta">
+                        <a href="deportes.html">
+                            <h2>DEPORTES</h2>
+                        </a>
+
+                    </div>
+                    <div class="cuerpoCarta">
+                        <h3>futbol ¿Oportunidad para Reina?</h3>
+                        <img src="https://uh.gsstatic.es/sfAttachPlugin/813041.jpg" alt=" Manolo Reina">
+                        <p>La llegada de un nuevo entrenador significa que muchos futbolistas pongan de nuevo el
+                            contador a
+                            cero. Se abre para ellos un nuevo horizonte y la opción de tener los minutos que con el
+                            anterior
+                            técnico no tenían. Manolo Reina es uno de...</p>
+                        <a href="./deportes.html#Manolo">ver mas</a>
+                    </div>
+                </article>
+                <article class="carta">
+                    <div class="cabezeraCarta">
+                        <a href="videjuegos.html">
+                            <h2>VIDEOJUEGOS</h2>
+                        </a>
+
+                    </div>
+                    <div class="cuerpoCarta">
+                        <h3>Star Wars: retrasan estreno de Obi-Wan Kenobi, pero hay una buena noticia</h3>
+                        <img src="https://www.vibetv.mx/wp-content/uploads/2021/02/obi-wan-kenobi-serie-vibetv.jpg"
+                            alt="Obi-Wan Kenobi">
+                        <p>la acción de Obi-Wan Kenobi iba a llegar a Disney+ el próximo 25 de mayo. Desafortunadamente
+                            esto
+                            no será posible y la serie tardará un poco más en llegar. Los fans solo tendrán que
+                            esperar...
+                        </p><a href="./videjuegos.html#obiWan">ver mas</a>
+                    </div>
+                </article>
+
+                <article class="carta">
+                    <div class="cabezeraCarta">
+                        <a href="politica.html">
+                            <h2>POLÍTICA</h2>
+                        </a>
+
+                    </div>
+                    <div class="cuerpoCarta">
+                        <h3>La nueva ejecutiva del PP reflejará el poder sin fisuras de Moreno en Andalucía</h3>
+                        <img src="https://phantom-elmundo.unidadeditorial.es/4d3fcf3c5d0b6dce3a350bed1ac2d5a9/resize/473/f/webp/assets/multimedia/imagenes/2022/03/25/16482103398629.jpg"
+                            alt="Moreno">
+                        <p>Colocará a personas de su máxima confianza en la dirección del partido tras desprenderse de
+                            las tutelas de la era Casado...
+                        </p><a href="./politica.html#Moreno">ver mas</a>
+                    </div>
+                </article>
+                <article class="carta">
+                    <div class="cabezeraCarta">
+                        <a href="sucesos.html">
+                            <h2>SUCESOS</h2>
+                        </a>
+                    </div>
+                    <div class="cuerpoCarta">
+                        <h3>Un estudiante mata a su profesor con un machete en un colegio en Chequia</h3>
+                        <img src="https://phantom-elmundo.unidadeditorial.es/23d39b3d727707d94a21dbd00d786ec9/crop/169x267/2625x1904/resize/473/f/webp/assets/multimedia/imagenes/2022/04/01/16487922167201.jpg"
+                            alt="colegio">
+                        <p>Un centenar de agentes y un helicóptero participó en la búsqueda del joven, descontento por
+                            su "fracaso escolar"...
+                        </p><a href="./sucesos.html#asesinato">ver mas</a>
+                    </div>
+                </article>
+
+            </div>
 
         </section>
-        <aside>
-        </aside>
     </main>
     <aside>
+        <a href="./politica.html#almenara">
+            <h3>La líder del PP de Almenara renuncia tras 11 años por "irregularidades" y "ataques de nuestro propio
+                partido"</h3>
+            <img src="https://phantom-elmundo.unidadeditorial.es/9de9cd22f5b5f5fe25eb2fb828cf84d7/crop/0x35/919x648/resize/473/f/webp/assets/multimedia/imagenes/2022/02/11/16445703628237.jpg"
+                alt="Almenara">
+        </a>
+        <a href="./deportes.html#beisbol">
+            <h3>LA VIDA Y EL TRISTE FINAL DE JOSÉ FERNÁNDEZ</h3>
+            <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/11F41/production/_91373537_gettyimages-597897702.jpg"
+                alt="Jose Fernandez">
+        </a>
+
 
     </aside>
     <footer>
@@ -111,5 +138,7 @@
         </section>
     </footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="./js/javaScript.js"></script>
+
 </html>

@@ -10,13 +10,15 @@
     <script src="./js/index.js"></script>
 </head>
 
-<body>
+<body onresize="desactivarSubMenu() , logoMenuMobilVisible()">
+    <div id="contMenuMobilcss"></div>
     <header>
         <img class="logo" src="imagenes/21601.png" alt="logo mundial con la palabra news.">
         <nav>
             <ul>
                 <li> <a href="index.html">INICIO</a> </li>
-                <li> <a href="#" onclick="alternarMenuNoticia()">NOTICIAS</a>
+                <li><a href="formulario.html">NEWSLETTER</a></li>
+                <li> <a href="#" onclick="alternarSubMenuNoticia()">NOTICIAS</a>
                     <div class="contSubM">
                         <ul class="subMNoticias">
                             <li><a href="deportes.html">DEPORTES</a></li>
@@ -28,6 +30,7 @@
                 </li>
             </ul>
         </nav>
+        <img onclick="alternarMenu()" id="menuMobil" src="imagenes/menuMovil.svg" alt="menuMobil">
     </header>
     <main>
         <section class="contNoticias">
@@ -91,9 +94,33 @@
             </article>
         </section>
     </main>
-    <aside></aside>
-    <footer></footer>
+    <aside>
+        <a href="./deportes.html#beisbol">
+            <h3>LA VIDA Y EL TRISTE FINAL DE JOSÉ FERNÁNDEZ</h3>
+            <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/11F41/production/_91373537_gettyimages-597897702.jpg"
+                alt="Jose Fernandez">
+        </a>
+        <a href="./politica.html#almenara">
+            <h3>La líder del PP de Almenara renuncia tras 11 años por "irregularidades" y "ataques de nuestro propio
+                partido"</h3>
+            <img src="https://phantom-elmundo.unidadeditorial.es/9de9cd22f5b5f5fe25eb2fb828cf84d7/crop/0x35/919x648/resize/473/f/webp/assets/multimedia/imagenes/2022/02/11/16445703628237.jpg"
+            alt="Almenara">
+        </a>
+        
+</aside>
+<footer>
+    <section>
+        <h4>Creadores:</h4>
+        <ul>
+            <li>Alan Skowronek</li>
+            <li>Cristian Gonzalez</li>
+        </ul>
+    </section>
+    <section>
+        <p>IES Manacor @ 2021 - 2022</p>
+    </section>
+</footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="./js/javaScript.js"></script>
-
 </html>

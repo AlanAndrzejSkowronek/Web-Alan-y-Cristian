@@ -1,0 +1,30 @@
+header{
+    display: flex;
+}
+header nav ul {
+    flex-direction: column; 
+    gap :20px  
+}
+nav{
+    display: none;
+    position: absolute;
+    padding:20px;
+    width: 15rem;
+    border-radius:0 0 2em 2em;
+    background-color: cadetblue;
+    top: 6.5em;
+    right: 0rem;
+}
+
+.contSubM {
+    width: 15rem;
+    top: 0;
+    right: 17em;
+    background-color: rgb(106, 173, 176);
+}
+@media (max-width:550px) {
+    .contSubM{        
+        top: 11.5em;
+        right: 0;
+    }
+}
